@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <app-header></app-header>
+  <div class="row">
+    <app-markdown-edit (rawInput)="createMarkup($event)"></app-markdown-edit>
+    <app-markdown-preview [preview]="markup"></app-markdown-preview>
+  </div>
+</div>
